@@ -214,7 +214,7 @@ contract TokenTest {
 ]
 ```
 ## 2.部署合约
-bytecode和abi生成之后，我们引入jingtum-lib库，通过initContract方法部署合约，代码如下：
+bytecode和abi生成之后，我们引入jingtum-lib库(2.0.0版本及以上)，通过initContract方法部署合约，代码如下：
 ```
 var jlib = require('jingtum-lib');
 var Remote = jlib.Remote;
@@ -248,7 +248,7 @@ var req = remote.initContract({
 如果成功，结果中会返回一个合约账号，供后面的调用使用。具体接口说明详见接口文档。
 
 ## 3.调用合约
-调用通部署一样，都是引入jingtum-lib库，然后通过invokeContract方法调用合约，代码如下：
+调用通部署一样，都是引入jingtum-lib库(2.0.0版本及以上)，然后通过invokeContract方法调用合约，代码如下：
 ```
 var jlib = require('jingtum-lib');
 var Remote = jlib.Remote;
